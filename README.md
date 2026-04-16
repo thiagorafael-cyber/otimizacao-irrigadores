@@ -1,10 +1,10 @@
-# Otimização de Alocação de Irrigadores (Set Cover Problem)
+# Otimização de Alocação de Irrigadores
 
 Este repositório contém a solução algorítmica para um problema clássico de otimização combinatória: encontrar a alocação mínima de irrigadores numa fazenda subdividida em parcelas, garantindo cobertura total de água. O problema foi modelado utilizando os princípios da **Teoria dos Grafos**.
 
 ## Abordagem Técnica
 
-O problema de cobertura de parcelas é análogo ao problema do **Conjunto Dominante** (*Dominating Set*) ou **Cobertura de Conjuntos** (*Set Cover*). Para garantir a descoberta da solução matemática ótima (o número mínimo absoluto de equipamentos), foi implementado um algoritmo exaustivo (**Força-Bruta**).
+O problema de cobertura de parcelas é análogo ao problema do **Conjunto Dominante** (*Dominating Set*). Para garantir a descoberta da solução matemática ótima (o número mínimo absoluto de equipamentos), foi implementado um algoritmo exaustivo (**Força-Bruta**).
 
 ### Principais Características da Implementação:
 * **Matriz de Adjacência:** Estrutura de dados escolhida para representar o mapa físico da fazenda, permitindo consultas de vizinhança em tempo constante O(1).
