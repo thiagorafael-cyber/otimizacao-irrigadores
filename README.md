@@ -19,7 +19,7 @@ O problema de cobertura de parcelas é análogo ao problema do **Conjunto Domina
 **Passo a passo:**
 1. Clone este repositório:
    ```bash
-   [git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/thiagorafael-cyber/otimizacao-irrigadores.git)
+   [git clone https://github.com/thiagorafael-cyber/otimizacao-irrigadores.git](https://github.com/thiagorafael-cyber/otimizacao-irrigadores.git)
    ```
 2. Acesse a pasta do projeto:
    ```bash
