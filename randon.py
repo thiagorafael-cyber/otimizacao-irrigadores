@@ -17,5 +17,5 @@ def gerar_instancia_txt(n, nome_arquivo):
             f.write(" ".join(map(str, linha)) + "\n")
 
 # Gerando os arquivos
-gerar_instancia_txt(30, 'instancia_30.txt')
-gerar_instancia_txt(31, 'instancia_31.txt')
+gerar_instancia_txt(15, 'instancia_15.txt')
+gerar_instancia_txt(35, 'instancia_35.txt')
