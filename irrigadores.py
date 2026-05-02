@@ -31,6 +31,10 @@ def verifica_cobertura(matriz_adjacencia, regioes_com_irrigador, quantidade_regi
 def conjunto_dominante_minimo(matriz_adjacencia, quantidade_regioes):
     melhor_solucao = []
     total_subconjuntos = 1 << quantidade_regioes
+    
+    total_podados = 0
+    total_verificados = 0
+    total_validos = 0
 
     for i in range(1, total_subconjuntos):
         regioes_com_irrigador = []
@@ -40,12 +44,22 @@ def conjunto_dominante_minimo(matriz_adjacencia, quantidade_regioes):
                 regioes_com_irrigador.append(j)
 
         if melhor_solucao != [] and len(regioes_com_irrigador) >= len(melhor_solucao):
+            total_podados += 1
             continue
 
-        if verifica_cobertura(matriz_adjacencia, regioes_com_irrigador, quantidade_regioes):
-            melhor_solucao = regioes_com_irrigador
+        total_verificados += 1
 
-    return melhor_solucao
+        if verifica_cobertura(matriz_adjacencia, regioes_com_irrigador, quantidade_regioes):
+            total_validos += 1
+            melhor_solucao = regioes_com_irrigador            
+
+    estatisticas = {
+        "total_podados": total_podados,
+        "total_verificados": total_verificados,
+        "total_validos": total_validos        
+    }
+
+    return melhor_solucao, estatisticas
 
 print("===================================================")
 print(" DISTRIBUIÇÃO ÓTIMA DE IRRIGADORES")
@@ -58,7 +72,7 @@ quantidade_regioes, matriz_adjacencia = ler_instancia(arquivo)
 
 inicio = time.time()
 
-solucao = conjunto_dominante_minimo(matriz_adjacencia, quantidade_regioes)
+solucao, estatisticas = conjunto_dominante_minimo(matriz_adjacencia, quantidade_regioes)
 
 fim = time.time()
 
@@ -67,3 +81,9 @@ print("Quantidade de regiões agrícolas:", quantidade_regioes)
 print("Número mínimo de irrigadores:", len(solucao))
 print("Instalar irrigadores nas regiões:", solucao)
 print("Tempo de execução: {:.6f} segundos".format(fim - inicio))
+
+print("\n========== ESTATÍSTICAS ==========")
+print("Espaço de busca total:", (1 << quantidade_regioes) - 1)
+print("Subconjuntos descartados pela poda:", estatisticas["total_podados"])
+print("Verificações de cobertura realizadas:", estatisticas["total_verificados"])
+print("Subconjuntos válidos encontrados:", estatisticas["total_validos"])
