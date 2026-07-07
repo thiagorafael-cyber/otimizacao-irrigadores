@@ -1,0 +1,8 @@
+﻿Instância;Quantidade de regiões;Espaço de busca total;Solução ótima baseline;Tempo baseline;Solução heurística;Tempo médio heurística;Diferença de irrigadores;Proximidade da solução;Speedup;Candidatos avaliados;Verificações de ganho;Solução válida
+5;5;"=SEERRO(POTÊNCIA(2;B2)-1;"""")";;;;;"=SEERRO(F2-D2;"""")";"=SEERRO(D2/F2;"""")";"=SEERRO(E2/G2;"""")";;;
+10;10;"=SEERRO(POTÊNCIA(2;B3)-1;"""")";;;;;"=SEERRO(F3-D3;"""")";"=SEERRO(D3/F3;"""")";"=SEERRO(E3/G3;"""")";;;
+15;15;"=SEERRO(POTÊNCIA(2;B4)-1;"""")";;;;;"=SEERRO(F4-D4;"""")";"=SEERRO(D4/F4;"""")";"=SEERRO(E4/G4;"""")";;;
+20;20;"=SEERRO(POTÊNCIA(2;B5)-1;"""")";;;;;"=SEERRO(F5-D5;"""")";"=SEERRO(D5/F5;"""")";"=SEERRO(E5/G5;"""")";;;
+25;25;"=SEERRO(POTÊNCIA(2;B6)-1;"""")";;;;;"=SEERRO(F6-D6;"""")";"=SEERRO(D6/F6;"""")";"=SEERRO(E6/G6;"""")";;;
+30;30;"=SEERRO(POTÊNCIA(2;B7)-1;"""")";;;;;"=SEERRO(F7-D7;"""")";"=SEERRO(D7/F7;"""")";"=SEERRO(E7/G7;"""")";;;
+35;35;"=SEERRO(POTÊNCIA(2;B8)-1;"""")";;;;;"=SEERRO(F8-D8;"""")";"=SEERRO(D8/F8;"""")";"=SEERRO(E8/G8;"""")";;;

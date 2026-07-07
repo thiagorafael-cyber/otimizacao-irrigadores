@@ -1,0 +1,8 @@
+instancia;quantidade_regioes;espaco_busca_total;irrigadores_finais;regioes_escolhidas;solucao_valida;iteracoes_heuristica;candidatos_avaliados;verificacoes_ganho;verificacoes_pos_processamento;remocoes_realizadas;tempo_guloso_medio;tempo_pos_processamento_medio;tempo_total_medio
+instancia_5.txt;5;31;2;[0, 4];True;2;10;50;2;0;0,000009640;0,000002860;0,000012500
+instancia_10.txt;10;1023;3;[6, 4, 5];True;3;30;300;3;0;0,000018440;0,000003620;0,000022060
+instancia_15.txt;15;32767;7;[1, 13, 2, 5, 6, 10, 12];True;7;105;1575;7;0;0,000058860;0,000016220;0,000075080
+instancia_20.txt;20;1048575;4;[2, 7, 12, 17];True;4;80;1600;4;0;0,000056100;0,000006580;0,000062680
+instancia_25.txt;25;33554431;7;[6, 23, 22, 4, 24, 12, 9];True;7;175;4375;7;0;0,000140820;0,000025040;0,000165860
+instancia_30.txt;30;1073741823;7;[7, 8, 25, 0, 18, 4, 29];True;7;210;6300;7;0;0,000197360;0,000029220;0,000226580
+instancia_35.txt;35;34359738367;9;[2, 24, 16, 21, 32, 33, 27, 30, 13];True;9;315;11025;9;0;0,000347100;0,000054260;0,000401360
