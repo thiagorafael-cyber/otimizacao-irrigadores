@@ -16,29 +16,70 @@ O objetivo é encontrar a menor quantidade de irrigadores necessária para cobri
 
 ## ⚙️ Implementação
 
-Foi desenvolvido um algoritmo baseline exato por **força bruta**, que:
+Foram implementadas duas abordagens para o problema:
 
-1. Gera todos os subconjuntos possíveis de regiões.
+### 1. Baseline por força bruta
+
+Algoritmo exato que:
+
+1. Gera subconjuntos possíveis de regiões usando bitmask.
 2. Verifica quais subconjuntos cobrem toda a área.
 3. Retorna a menor solução encontrada.
 
+Esse algoritmo garante a solução ótima, mas possui alto custo computacional para instâncias maiores.
+
+### 2. Heurística gulosa
+
+Algoritmo heurístico que:
+
+1. Avalia as regiões candidatas.
+2. Escolhe a região com maior ganho de cobertura.
+3. Em caso de empate, escolhe a região com menor sobreposição.
+4. Aplica pós-processamento para tentar remover irrigadores redundantes.
+
+A heurística não garante a solução ótima, mas busca encontrar soluções próximas ao ótimo em tempo reduzido.
+
 ## 📂 Estrutura dos Arquivos
 
-- irrigadores.py
-- instancia_5.txt
-- instancia_10.txt
-- instancia_25.txt
-- instancia_30.txt
-- instancia_31.txt
-- README.md
+- `irrigadores.py`
+- `instancia_5.txt`
+- `instancia_10.txt`
+- `instancia_15.txt`
+- `instancia_20.txt`
+- `instancia_25.txt`
+- `instancia_30.txt`
+- `instancia_35.txt`
+- `resultados_heuristica_execucoes.csv`
+- `resultados_heuristica_resumo.csv`
+- `README.md`
 
 ## ▶️ Como Executar
 
-    python irrigadores.py
+No terminal, execute:
 
-Depois, informe o nome da instância desejada:
+```bash
+python .\irrigadores.py
+```
 
-    instancia_5.txt
+Ou:
+
+```bash
+python irrigadores.py
+```
+
+Depois, escolha uma das opções do menu:
+
+```text
+1 - Executar baseline com arquivo .txt
+2 - Executar heurística com arquivo .txt
+0 - Sair
+```
+
+Em seguida, informe o nome da instância desejada, por exemplo:
+
+```text
+instancia_5.txt
+```
 
 ## 👨‍💻 Integrantes
 
